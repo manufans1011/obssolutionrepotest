@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="ISO-8859-1">
+	<title>Login</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+	<script>
+		$(function(){
+		       $("input").prop('required',true);
+		});
+	</script>
+</head>
+<body>
+	<form action="LoginServlet" method="post">
+		<div style="width: 300px; padding: 20px;">
+			<div>
+				<label>User ID:</label>
+				<input style="width: 150px; float: right;" type="text" name="userName"/>
+				<br/>
+				<br/>
+				<label>Password: </label>
+				<input style="width: 150px; float: right;" type="password" name="password"/>
+			</div>			
+			<br/>
+			<br/>
+			<div style="float: right;">
+				<input style="width: 150px;" type="submit" value="Login"/>
+			</div>
+		</div>
+	</form>
+</body>
+</html>
