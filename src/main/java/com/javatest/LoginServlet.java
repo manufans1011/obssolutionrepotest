@@ -61,8 +61,7 @@ public class LoginServlet extends HttpServlet {
 					studentList.stream().collect(Collectors.groupingBy(w -> w.getDepartment()));
 			
 			Map<String, List<Student>> sortedStudent = new TreeMap<>(studlistGrouped);
-//            System.out.println(studlistGrouped.get(dummyPassword));//print by name and then location
-			
+
 			request.setAttribute("username", userName);
 			request.setAttribute("student_list", sortedStudent);
 			request.setAttribute("loginSuccess","true");
